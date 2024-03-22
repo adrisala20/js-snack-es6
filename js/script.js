@@ -9,16 +9,34 @@ nome dell'ospite (guestName),
 posto occupato (place),
 Generiamo e stampiamo in console la lista per i segnaposto. */
 
-const guest= [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni',  'George Clooney', 'Amal Clooney', 'Fedez', 'Amadeus', 'Fiorello'];
+const listGuest= [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni',  'George Clooney', 'Amal Clooney', 'Fedez', 'Amadeus', 'Fiorello'];
+//console.log(listGuest)
 
-// guest.forEach((el,i)=> {
-//     const tableName = 'Tavolo Vip';
-//     const place = [i + 1];
-// });
+const tableName = 'Tavolo Vip';
+//console.log(tableName);
 
-const place = guest.map((el,i)=> {
-    const tableName = 'Tavolo Vip';
-    const place = [i + 1];
-    return tableName + ' ' + el + ' ' + ' '+  place; 
+const place = [] ;
+//console.log(place)
+
+listGuest.forEach((el,i)=> {
+    let numberPlace = i + 1;
+    place.push(numberPlace);
 });
-console.log(place)
+
+listGuest.forEach((el, place ) =>{
+    const guest = [
+        el, 
+        place,
+        tableName
+    ];
+    console.log(guest)
+    
+});
+
+// const guestName = 
+// const place = listGuest.map((el,i)=> {
+//     const tableName = 'Tavolo Vip:';
+//     const place = [i + 1];
+//     return `${tableName} ${el} posto assegnato. ${place}`; 
+// });
+// console.log(place)
