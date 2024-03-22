@@ -42,7 +42,7 @@ Id  Name                Grades
 120 Francesca da Polenta    84
 */
 
-let studenti = [
+let students = [
     {
         id: 213,
         name:'Marco della rovere',
@@ -76,5 +76,11 @@ let studenti = [
         name:'GFrancesca da Polenta ',
         grade: 84,
     },
-]
-console.log(studenti)
+];
+
+console.log(students);
+
+const nameStudents = students.map((el) => {
+    return el.name.toUpperCase();
+})
+console.log(nameStudents);
