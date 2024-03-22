@@ -15,28 +15,32 @@ const listGuest= [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo',
 const tableName = 'Tavolo Vip';
 //console.log(tableName);
 
-const place = [] ;
+//const place = [] ;
 //console.log(place)
 
 listGuest.forEach((el,i)=> {
-    let numberPlace = i + 1;
-    place.push(numberPlace);
+    const guest = {
+        'nome': el, 
+        'tavolo': tableName,
+        'posto': i + 1,
+    };
+    console.log(guest)  
 });
 
-listGuest.forEach((el, place ) =>{
-    const guest = [
-        el, 
-        place,
-        tableName
-    ];
-    console.log(guest)
-    
-});
+/*
+SNACK 2
+Abbiamo un elenco degli studenti di una facoltà, identificati da id, Nome e somma totale dei loro voti di esame...
+1. Per preparare l'aula di un nuovo corso, dobbiamo stampare le targhe col nome degli studenti: creare una lista contenente il loro nome tutto in maiuscolo
+ES (Marco della Rovere => MARCO DELLA ROVERE);
+2. Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70
+3. Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120
 
-// const guestName = 
-// const place = listGuest.map((el,i)=> {
-//     const tableName = 'Tavolo Vip:';
-//     const place = [i + 1];
-//     return `${tableName} ${el} posto assegnato. ${place}`; 
-// });
-// console.log(place)
+Id  Name                Grades
+213 Marco della Rovere      78
+110 Paola Cortellessa       96
+250 Andrea Mantegna         48
+145 Gaia Borromini          74
+196 Luigi Grimaldello       68
+102 Piero della Francesca   50
+120 Francesca da Polenta    84
+*/
