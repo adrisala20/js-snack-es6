@@ -78,9 +78,23 @@ let students = [
     },
 ];
 
-console.log(students);
+//console.log(students);
 
 const nameStudents = students.map((el) => {
     return el.name.toUpperCase();
 })
-console.log(nameStudents);
+//console.log(nameStudents);
+
+//function filter per l'array di voti sopra 70
+const gradesStudents= students.filter((el) => {
+
+    return el.grade >= 70;
+})
+//console.log (gradesStudents);
+
+//function filter per gli studenti con voti superiore a 70 e id superiore a 120
+const gradesIdStudents= students.filter((el) => {
+
+    return el.grade >= 70 && el.id >= 120;
+})
+console.log(gradesIdStudents);
