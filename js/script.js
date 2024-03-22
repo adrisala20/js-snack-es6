@@ -11,10 +11,14 @@ Generiamo e stampiamo in console la lista per i segnaposto. */
 
 const guest= [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni',  'George Clooney', 'Amal Clooney', 'Fedez', 'Amadeus', 'Fiorello'];
 
-guest.forEach((el,i)=> {
+// guest.forEach((el,i)=> {
+//     const tableName = 'Tavolo Vip';
+//     const place = [i + 1];
+// });
+
+const place = guest.map((el,i)=> {
     const tableName = 'Tavolo Vip';
     const place = [i + 1];
-    console.log(place)
-    console.log(el,i);
-    console.log(tableName);
+    return tableName + ' ' + el + ' ' + ' '+  place; 
 });
+console.log(place)
