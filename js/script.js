@@ -15,16 +15,13 @@ const listGuest= [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo',
 const tableName = 'Tavolo Vip';
 //console.log(tableName);
 
-//const place = [] ;
-//console.log(place)
-
 listGuest.forEach((el,i)=> {
     const guest = {
         'nome': el, 
         'tavolo': tableName,
         'posto': i + 1,
     };
-    console.log(guest)  
+   // console.log(guest)  
 });
 
 /*
@@ -44,3 +41,40 @@ Id  Name                Grades
 102 Piero della Francesca   50
 120 Francesca da Polenta    84
 */
+
+let studenti = [
+    {
+        id: 213,
+        name:'Marco della rovere',
+        grade: 78,
+    },
+    {
+        id: 110,
+        name:'Paola Cortellessa',
+        grade: 96,
+    },
+    {
+        id: 250,
+        name:'Andrea Mantegna ',
+        grade: 48,
+    },
+    {
+        id: 145,
+        name:'Gaia Borromini ',
+        grade: 74,
+    },
+    {
+        id: 196,
+        name:'Luigi Grimaldello',
+        grade: 68,
+    },{
+        id: 102,
+        name:'Piero della Francesca',
+        grade: 50,
+    },{
+        id: 120,
+        name:'GFrancesca da Polenta ',
+        grade: 84,
+    },
+]
+console.log(studenti)
